@@ -10,7 +10,7 @@ public class Family extends Employee {
 	private List<String> childIdNumbers;
 
     public Family(Employee employee){
-        super(employee.getFirstName(), employee.getLastName(), employee.getEmployeeId(), employee.getAddress(), employee.getForeigner());
+        super(employee.getFirstName(), employee.getLastName(), employee.getEmployeeId(), employee.getAddress(), employee.getForeigner(), employee.getGender());
 
         childNames = new LinkedList<String>();
 		childIdNumbers = new LinkedList<String>();
