@@ -1,9 +1,6 @@
 package lib;
 
 import java.time.LocalDate;
-import java.time.Month;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Employee{
 
@@ -75,6 +72,6 @@ public class Employee{
 			monthWorkingInYear = 12;
 		}
 		
-		return TaxFunction.calculateTax(salary.getMonthSalary(), salary.getAddtionalIncome(), monthWorkingInYear, salary.getAnnualDeductible(), family.getSpouseNumber().equals(""), family.getChildIdNumber().size());
+		return TaxFunction.calculateTax(salary, salary.getAddtionalIncome(), monthWorkingInYear, salary.getAnnualDeductible(), family.getSpouseNumber().equals(""), family.getChildIdNumber().size());
 	}
 }
