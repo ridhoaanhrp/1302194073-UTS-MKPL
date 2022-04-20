@@ -3,15 +3,14 @@ package lib;
 import java.util.List;
 import java.util.LinkedList;
 
-public class Family {
+public class Family extends Employee {
     private String spouseName;
 	private String spouseIdNumber;
     private List<String> childNames;
 	private List<String> childIdNumbers;
 
-    public Family(String spouseName, String spouseIdNumber, List<String> childNames, List<String> childIdNumbers){
-        this.spouseName = spouseName;
-        this.spouseIdNumber = spouseIdNumber;
+    public Family(Employee employee){
+        super(employee.getFirstName(), employee.getLastName(), employee.getEmployeeId(), employee.getAddress(), employee.getForeigner());
 
         childNames = new LinkedList<String>();
 		childIdNumbers = new LinkedList<String>();
@@ -21,7 +20,7 @@ public class Family {
         this.spouseName = spouseName;
     }
     public void setSpouseNumber(String spouseIdNumber){
-        this.spouseIdNumber = spouseIdNumber;
+        this.spouseIdNumber = super.getEmployeeId();
     }
 
 
