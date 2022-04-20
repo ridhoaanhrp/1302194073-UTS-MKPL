@@ -7,7 +7,7 @@ public class EmployeeSalary extends Employee{
 	private int annualDeductible;
 
     public EmployeeSalary(Employee employee){
-        super(employee.getFirstName(), employee.getLastName(), employee.getEmployeeId(), employee.getAddress(), employee.getForeigner());
+        super(employee.getFirstName(), employee.getLastName(), employee.getEmployeeId(), employee.getAddress(), employee.getForeigner(), employee.getGender());
     }
 
     public void setMonthlySalary(int grade) {	
